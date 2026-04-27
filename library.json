@@ -1,7 +1,7 @@
 {
   "name": "sensor-DFSCD41CO2",
   "version": "0.1.0",
-  "description": "DF Robot sensor that uses the SCD41 IR sensor to measure CO2, temperature, and humidity",
+  "description": "Sensor to measure CO2, temperature, and humidity",
   "keywords": "Fabrica-IO, sensor, air, CO2, temperature, humidity, SCD41",
   "repository": {
     "type": "git",
