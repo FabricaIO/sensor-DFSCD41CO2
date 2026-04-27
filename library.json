@@ -1,0 +1,86 @@
+{
+  "name": "sensor-DFSCD41CO2",
+  "version": "0.1.0",
+  "description": "DF Robot sensor that uses the SCD41 IR sensor to measure CO2, temperature, and humidity",
+  "keywords": "Fabrica-IO, sensor, air, CO2, temperature, humidity, SCD41",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FabricaIO/sensor-DFSCD41CO2.git"
+  },
+  "authors": [
+    {
+      "name": "Sam Groveman",
+      "email": "SamGroveman@outlook.com",
+      "url": "https://github.com/FabricaIO"
+    }
+  ],
+  "dependencies": {
+    "DFRobot_SCD4X": "https://github.com/DFRobot/DFRobot_SCD4X"
+  },
+  "license": "GPLv3",
+  "homepage": "https://github.com/FabricaIO",
+  "frameworks": "arduino",
+  "platforms": "*",
+  "fabricaio": {
+    "name": "SCD41",
+    "type": 0,
+    "category": "Environment Sensor",
+    "libname": "DFSCD41CO2",
+    "includes": ["DFSCD41CO2"],
+    "description": "Sensor that uses the SCD41 IR sensor to measure CO2, temperature, and humidity",
+    "constructor": [
+      [
+        {
+          "name": "I2C_bus",
+          "type": "TwoWire*",
+          "description": "The I2C bus the sensor is connected to",
+          "default": "&Wire"
+        },
+        {
+          "name": "Address",
+          "type": "uint8_t",
+          "description": "The I2C address of the SCD41 sensor",
+          "default": "0x62"
+        },
+        {
+          "name": "ConfigFile",
+          "type": "String",
+          "description": "The config file name",
+          "default": "DFSCD41CO2.json"
+        }
+      ],
+      [
+        {
+          "name": "sda",
+          "type": "int",
+          "description": "The SDA pin on the I2C bus",
+          "default": "21"
+        },
+        {
+          "name": "scl",
+          "type": "int",
+          "description": "The SCL pin on the I2C bus",
+          "default": "22"
+        },
+        {
+          "name": "I2C_bus",
+          "type": "TwoWire*",
+          "description": "The I2C bus the sensor is connected to",
+          "default": "&Wire"
+        },
+        {
+          "name": "Address",
+          "type": "uint8_t",
+          "description": "The I2C address of the SCD41 sensor",
+          "default": "0x62"
+        },
+        {
+          "name": "ConfigFile",
+          "type": "String",
+          "description": "The config file name",
+          "default": "DFSCD41CO2.json"
+        }
+      ]
+    ]
+  }
+}
