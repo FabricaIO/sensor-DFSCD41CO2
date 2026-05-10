@@ -52,7 +52,7 @@ bool DFSCD41CO2::begin() {
 	// Disable measurement mode
 	scd41_sensor.enablePeriodMeasure(SCD4X_STOP_PERIODIC_MEASURE);
 	delay(550);
-	Logger.println("Performing self test on DSC41...");
+	Logger.println("Performing self test on SCD41...");
 	if(scd41_sensor.performSelfTest() != 0) {
 		Logger.println("Self test failed.");
 		return false;
